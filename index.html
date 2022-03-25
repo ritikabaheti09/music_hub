@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+    <head>
+        <title>MUSIC HUB</title>
+       <meta>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.2.1/font/bootstrap-icons.css">>
+       <style>
+           * {
+               margin: 0px;
+               font-family: Georgia, 'Times New Roman', Times, serif;
+           }
+           body{
+               background-color: cornsilk;
+
+           }
+           #header{
+           
+            background-color: black;
+            text-align: right;
+           }
+           #header>a{
+               color: white;
+               text-decoration: none;
+               font-size: 15px;
+               padding:15px;
+           }
+           #header button{
+               background-color: #43a746;
+               font-size: 15px;
+               font-weight: bold;
+               border: none;
+               color: white;
+               padding: 10px;
+           }
+           #logo-section {
+               background-color: #fdca16;
+               height: 150px;
+               position: relative;
+           }
+
+           
+
+           .countainer-rightalign{
+               float: right;
+               position: absolute;
+               top: 0;
+               right:0;
+               margin-right: 100px;
+                margin-top: 45px;
+           }
+
+           #logo-section #title{
+               position: absolute;
+               top: 0;
+               left:0;
+               margin-left: 160px;
+               margin-top: 10px ;
+               font-size: 75px;
+               font-family: fantasy;
+               font-weight: normal;
+               
+            }
+
+            #logo-section #sub-title{
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: 90px;
+                margin-left: 160px;
+                font-weight: normal;
+                font-size: 18.5px;
+            }
+
+  
+            #search-box{
+                color: #111;
+                background-color: white;
+                border: none;
+                height: 50px;
+                width: 226px;
+                font-size: 17px; 
+                padding:5px;
+            }
+
+            #search-btn{
+                position: absolute;
+                background-color: white;
+                border: none;
+                height:60px ;
+                width: 60px;
+                font-size: 17px;
+
+            }
+            #menubar{
+                
+                position: absolute;
+                list-style-type: none;
+                background-color: #333;
+                width: 100%;
+                padding: 0;
+               
+
+            }
+            #menubar li {
+                display: flex;
+                flex-direction: column;
+                float: left;
+              
+            }
+            #menubar li a {
+                display: block;
+                padding: 14px 40px;
+                color: white;
+                text-decoration: none;
+                font-size: 24px;
+
+            }
+            #menubar #active{
+                background-color: green;
+            }
+            #menubar #active:hover {
+                background-color: #065306;
+
+            }
+            #menubar li:hover {
+                background-color: #111;
+            }
+
+            @media only screen and (max-width: 1258px){
+                
+                #menubar li a {
+               
+                font-size: 22px;
+                }
+                
+            }
+
+       </style>
+      
+    </head>
+    <body>
+        <div id="header">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="tnc.html">Team and Condition</a>
+            <button>Login/SignUp</button>
+        </div>
+        
+        <div id="logo-section">
+            <div class="countainer-leftalign">
+                <img src="logo.gif" height="150px" width="150px">
+                <h1 id="title">MUSIC HUB</h1>
+                <h4 id="sub-title">------------------------------------------------<br>one stop shop for all your musical needs</h4>
+            </div>
+            <div class="countainer-rightalign">
+                <form method="get" action="search.php">
+                    <input type="text" id="search-box" name="search" />
+                    <button type="submit" id="search-btn"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <ul id="menubar">
+            <li><a href="index.html" id="active">HOME</a></li>
+            <li><a href="newhit.html">NEW HITS</a></li>
+            <li><a href="recent.html">RECENTLY ADDED</a></li>
+            <li><a href="favourite.html">FAVOURITE</a></li>
+            <li><a href="playlist.html">PLAYLIST</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+        </ul>
+    
+        </div>
+        <div id="webpage-content"></div>
+        <div id="footer"></div>
+    </body>
+</html>
